@@ -8,4 +8,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-alpine-${VARIANT}
 RUN apk update \
     && apk add --no-cache nginx
 
+COPY nginx.conf /etc/nginx/nginx.conf
+
 EXPOSE 80
