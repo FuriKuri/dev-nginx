@@ -25,7 +25,7 @@
 	},
 	//"initializeCommand": "nginx",
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "nginx",
+	"postStartCommand": "nginx",
 
 	// Replace when using a ptrace-based debugger like C++, Go, and Rust
 	// "runArgs": [ "--init", "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
